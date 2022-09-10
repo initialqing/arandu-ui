@@ -1,3 +1,5 @@
+/// <reference types="vitest" />
+
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
 import Unocss from 'unocss/vite';
@@ -33,5 +35,13 @@ export default defineConfig({
             formats: ['es']
         },
         cssCodeSplit: true
+    },
+    test: {
+        globals: true,
+        environment: 'happy-dom',
+        // 支持tsx组件
+        transformMode: {
+            web: [/.[tj]sx$/]
+        }
     }
 })

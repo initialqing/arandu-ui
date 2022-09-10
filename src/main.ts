@@ -1,14 +1,13 @@
 // import { createApp } from 'vue'
 // import SFCButton from '~/SFCButton.vue'
 
-import '@unocss/reset/tailwind.css'
-import 'uno.css'
+import "@unocss/reset/tailwind.css";
+import "uno.css";
 // const app = createApp(SFCButton)
 import { createApp } from "vue/dist/vue.esm-browser";
-import AranduUI from './entry'
+import AranduUI from "./entry";
 createApp({
-    template:
-        `<div style="margin:20px;">
+  template: `<div style="margin:20px;">
             <MyButton color="blue">蓝色按钮</MyButton>
             <MyButton color="green">绿色按钮</MyButton>
             <MyButton color="gray">灰色按钮</MyButton>
@@ -42,5 +41,7 @@ createApp({
             <MyButton color="red" round plain icon="incomplete-cancel" ></MyButton>
         </div>
 
-        `
-}).use(AranduUI).mount("#app");
+        `,
+})
+  .use(AranduUI)
+  .mount("#app");

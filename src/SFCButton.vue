@@ -1,17 +1,15 @@
 <template>
-    <div>
-        <button>SFC Button</button>
-    </div>
+  <div>
+    <button>SFC Button</button>
+  </div>
 </template>
 
-<script setup lang="ts">
+<script setup lang="ts"></script>
 
-</script>
 <script lang="ts">
-    export default {
-        name: "SFCButton"
-    }
+export default {
+  name: "SFCButton",
+};
 </script>
-<style scoped>
 
-</style>
+<style scoped></style>
