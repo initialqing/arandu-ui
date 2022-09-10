@@ -1,7 +1,6 @@
 // @unocss-include
 import { defineComponent, PropType } from "vue";
 import "uno.css";
-
 export type IColor =
   | "black"
   | "gray"
