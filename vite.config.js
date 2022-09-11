@@ -27,14 +27,16 @@ export default defineConfig({
     ],
     build: {
         rollupOptions,
-        minify: false,
+        minify: 'terser',
+        sourcemap: true,
+        brotliSize:true,
         lib: {
             entry: "./src/entry.ts",
             name: "AranduUI",
             fileName: "arandu-ui",
-            formats: ['es']
+            formats: ['iife']
         },
-        cssCodeSplit: true
+        
     },
     test: {
         globals: true,
@@ -42,6 +44,6 @@ export default defineConfig({
         // 支持tsx组件
         transformMode: {
             web: [/.[tj]sx$/]
-        }
+        },
     }
 })
